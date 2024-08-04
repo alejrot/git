@@ -1,60 +1,11 @@
 
 
 
-## [Volver al Indice](../Index.md#git)
 
-<!-- <image src='./imagenes/git.png' alt="git" > -->
 
 # GIT
 
-## Comandos Iniciales y Configuración Global
-
-Recomendado: usar la terminal Git Bash para trabajar.
-
-Información de la versión instalada:
-```bash
-git --version
-```
-Ponemos nuestro nombre a nuestra estación de trabajo:
-```bash
-git config --global user.name “< nuestro nombre o apodo>”
-```
-Declaramos nuestro email. Es meramente informativo y no revisa su disponibilidad.
-```bash
-git config --global user.email   <usuario>@<servidor_correo>
-```
-Se selecciona por defecto el editor de texto indicado y la terminal queda en espera hasta que el editor usado se cierre.
-```bash
-git config --global core.editor  <editor_texto> --wait   
-```
-Ejemplos editores: 
-
-- VSCode	    → code --wait  
-- VSCodium	    → codium --wait  
-- Bloc de Notas → notepad --wait
-
-Abre el archivo de configuración global:
-```bash
-git config --global -e
-```
-Configura el salto de línea para los archivos según el sistema operativo:
-```bash
-git config --global core.autocrlf   <valor>
-```
-- en Windows  se usa CR LF  (carriage return y line feed) → poner true
-- en Linux sólo LF  → poner input
-- en MAC sólo LF    → poner input
-Configurar para evitar conflictos con otras estaciones de trabajo.
-
-Resumen de configuraciones:
-```bash
-git config -h
-```
-
-**HINT:** se puede volver de las ventanas informativas a la ventana de comandos presionando la letra Q.
-
-
-## Comandos de los directorios (simil Linux)
+## Comandos de los directorios (Bash)
 Archivos del actual directorio (sólo visibles)
 ```bash
 ls
@@ -71,7 +22,8 @@ Permite entrar a un sub directorio
 ```bash
 cd nombre_carpeta
 ```
-**HINT:** escribir el nombre parcialmente y presionar TAB para autocompletar.
+!!! tip "HINT: autocompletado de nombres" 
+    Escribir el nombre de archivos y carpetas parcialmente y entonces presionar TAB para autocompletar.
 
 Permite retroceder al directorio superior.
 ```bash
@@ -131,7 +83,7 @@ Añade a GIT  los cambios realizados hasta el momento del archivo especificado �
 ```bash
 git add <nombre_archivo>
 ```
-Añade a GIT la carpeta completa indicada:
+Añade a GIT la carpeta indicada completa:
 ```bash
 git add <nombre_directorio>
 ```
@@ -148,12 +100,16 @@ Ejemplo:
 ```bash
 git add *.txt
 ```
-Añade todos los archivos existentes:
-```bash
-git add .
-git add -A
-```
-Es una mala práctica porque puede añadir al proyecto archivos ajenos al programa: binarios, imágenes de entrada, archivos de salida del programa, etc.
+!!! warning "Añadido de todos los archivos "
+
+    Es una mala práctica porque puede añadir al proyecto archivos ajenos al programa: binarios, imágenes de entrada, archivos de salida del programa, etc.
+
+    Algunas opciones para añadir todos los archivos existentes:
+    ```bash
+    git add .
+    git add -A
+    ```
+
 
 Resumen del proyecto: rama utilizada actualmente por GIT , actualizaciones realizadas del proyecto y archivos incluidos , distinguiendo los ya guardados y los que tienen cambios pendientes de guardado.
 
@@ -405,12 +361,18 @@ Para deshacer los cambios hechos sobre un archivo preguardado con el comando 'ad
 ```bash
 git checkout -- <archivo>   #deshace cambios no 'added'
 ```
+o:
+
+```bash
+git restore <archivo>  # descarta cambios respecto del último estado guardado ('add' o 'commit') 
+```
+
 Para descartar también los cambios preguardados sobre el archivo y volver a su ultimo 'commit':
 ```bash
 # MAL: si el archivo fue 'added' no vuelve al commit
 
-git restore <archivo>  # descarta cambios respecto del último estado guardado ('add' o 'commit') 
 git restore --staged <archivo>   # descarta el 'add' y sus cambios
+git restore <archivo>  # descarta cambios respecto del último estado guardado ('add' o 'commit') 
 ```
 Otra opción:
 ```bash
@@ -540,30 +502,11 @@ git push --delete origin <etiqueta>    # repositorio remoto
 ```
 
 
-## Alias de comandos Git
 
-Se pueden **crear alias** para los comandos más usados
-```bash
-git cofig --global alias.<apodo> <comandos>
-```
-Ejemplo: crear un comando 'unstage' para descartar cambios de archivo
-```bash
-# Recomendado: crear comando'unstage'
-git config --global alias.unstage 'reset  HEAD --'
-```
-Ahora estas dos instrucciones son equivalentes:
-```bash
-git unstage <archivo>
-git reset HEAD <archivo>
-```
-**Recomendado:** crear un comando'tree' para visualizar los commits
-```bash
-# Recomendado: crear comando 'tree'
-git config --global alias.tree "log --graph --decorate --all --oneline" 
-```
 
-## Git Diff
-Marcar cambios respecto al último guardado_
+## Diferencias - diff
+
+Marcar cambios respecto al último guardado:
 ```bash
 git diff
 ```
@@ -606,13 +549,6 @@ git rebase --continue
 git rebase --abort
 ```
 
-## GitHub Pages
-
-https://pages.github.com
-
-GitHub permite crear un sitio web con subdominio de github en base a los archivos md de cada repositorio
-
-https://docs.github.com/es/pages
 
 
 
@@ -625,32 +561,3 @@ https://git-scm.com/book/es/v2/Fundamentos-de-Git-Trabajar-con-Remotos
 ----
 *******
 ___
-
-[Hola Mundo ](https://www.youtube.com/watch?v=VdGzPZ31ts8)
-
-[Curso de GIT y GITHUB desde CERO para PRINCIPIANTES - Brais Moure](https://www.youtube.com/watch?v=3GymExBkKjE)
-
-https://www.freecodecamp.org/espanol/news/como-borrar-una-branch-de-git-en-ambos-repositorios-local-y-remoto/#:~:text=Borrar%20una%20branch%20LOCAL&text=Borra%20una%20branch%20local%20con%20git%20branch%20-d%20.&text=La%20opción%20-d%20eliminará%20la,sido%20empujada%20o%20fusionada%20aún.
-
-https://komodor.com/learn/how-to-fix-fatal-remote-origin-already-exists-error/
-
-https://desarrolloweb.com/articulos/descartar-cambios-archivos-git.html
-
-
-https://keepcoding.io/blog/como-deshacer-y-rehacer-cambios-en-git/#:~:text=Si%20requieres%20regresar%20a%20alguna,%2C%20–mixed%20y%20–soft.
-
-https://www.lachicainformatica.com/2020/06/git-volver-a-commit-anterior-viajes-en-el-tiempo.html
-
-
-
----
----
-
-## [Volver a Inicio](#git)
-
-## [Volver al Indice](../Index.md#git)
-
-
-
-
-

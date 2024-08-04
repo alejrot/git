@@ -1,0 +1,95 @@
+site_name: Git
+
+
+theme:
+  name: material
+  language: es
+  font: false   # previene carga de Google Fonts
+
+  icon: 
+    # logo: fontawesome/solid/user-nurse
+    logo: simple/git  # :simple-git:
+  
+  palette:
+  # Palette toggle for light mode
+  # - media: "(prefers-color-scheme)"
+  #   toggle:
+  #     icon: material/lightbulb-auto
+  #     name: Modo automático
+      
+  # Palette toggle for light mode
+  - media: "(prefers-color-scheme: light)"
+    scheme: default
+    primary: orange
+    accent: lime 
+    toggle:
+      icon: material/lightbulb 
+      name: Modo claro
+
+  # Palette toggle for dark mode
+  - media: "(prefers-color-scheme: dark)"
+    scheme: slate
+    primary: orange
+    accent: lime 
+    toggle:
+      icon: material/lightbulb-outline
+      name: modo oscuro
+
+  features:
+    # carga instantánea (requiere site_url)
+    - navigation.instant
+    - navigation.instant.preview
+    # indice flotante (a derecha tipicamente)
+    # - navigation.tabs
+    # sugerencias de busqueda y remarcar resultados
+    - search.suggest
+    - search.highlight
+    - search.share    # boton compartir
+    # header
+    - header.autohide # oculytamiento automatico
+    - navigation.footer
+
+    - content.code.copy # copiad bloques de codigo
+    - content.code.annotate # anotaciones desplegables en código
+    
+    - content.tabs.link # pestañas interna solidarias
+
+extra_css:
+  - stylesheets/extra.css
+
+plugins:
+  - search
+
+markdown_extensions:
+  - abbr
+  - attr_list
+  - md_in_html
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - def_list
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - tables
+  - pymdownx.tabbed:
+      alternate_style: true
+
+nav:
+  - Indice: index.md
+  - Configuracion inicial: configuracion_inicial.md
+  - Primeros pasos: primeros_pasos.md
+  - GIT : git.md
+  - Alias y Comandos personalizados: alias_comandos.md
+  - GitHub Pages: gh_pages.md
+  - Enlaces y referencias: enlaces.md
+
+

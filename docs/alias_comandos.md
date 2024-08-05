@@ -4,21 +4,6 @@ categories:
   - Performance
 readtime: 15
 ---
-:fontawesome-solid-user-nurse:{.nurse}
-
-:fontawesome-solid-computer-mouse:
-
-:simple-github:
-
-:simple-git:
-
-:octicons-git-pull-request-draft-24:
-
-
-|opcionm | signif|
-|:---:|:---|
-|:simple-github:{.nurse}| hola|
-|:simple-git:{.nurse}|  chau|
 
 
 ## Alias de comandos Git

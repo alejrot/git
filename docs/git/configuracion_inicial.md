@@ -11,7 +11,7 @@ git --version
 ```
 Ponemos nuestro nombre a nuestra estación de trabajo:
 ```bash
-git config --global user.name “< nuestro nombre o apodo>”
+git config --global user.name “<nombre o apodo de usuario>”
 ```
 Declaramos nuestro email. Es meramente informativo y no revisa su disponibilidad.
 ```bash
@@ -70,5 +70,6 @@ Resumen de configuraciones:
 git config -h
 ```
 
-**HINT:** se puede volver de las ventanas informativas a la ventana de comandos presionando la letra Q.
+!!! hint "HINT" 
+    Se puede volver de las ventanas informativas a la ventana de comandos presionando la **letra Q**.
 

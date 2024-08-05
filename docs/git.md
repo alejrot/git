@@ -50,203 +50,38 @@ Lee y muestra en pantalla el contenido de archivo indicado.
 cat <nombre_archivo>
 ```
 
-## Etapas GIT
+Crea un archivo vacío con el nombre indicado:
+```bash
+touch <nombre_archivo>
+```
+
+## Etapas del repositorio GIT
+
+### 0.Untracked
+En la primera instancia del proyecto no hay seguimiento de carpetas ni de archivos.
+
 
 ### 1. Stage
-Es una etapa intermedia dentro del computador donde el usuario decide qué archivos añadir (ó quitar) y donde se guardan los cambios preliminares realizados sobre los mismos. Utiliza la instrucción add para registrar los archivos y sus cambios.
+Es una etapa intermedia dentro del computador donde el usuario decide qué archivos añadir (ó quitar) y donde se guardan los cambios preliminares realizados sobre los mismos. Utiliza la instrucción `add` para registrar los archivos y sus cambios.
 
 ### 2. Commit
-Etapa donde se actualizan (guardan) los cambios hechos en los archivos del proyecto y se incorpora la numeración y una descripción de las modificaciones realizadas. Utiliza la instrucción commit para crear puntos de guardado del proyecto también llamados commit.
+Etapa donde se actualizan (guardan) los cambios hechos en los archivos del proyecto y se incorpora la numeración y una descripción de las modificaciones realizadas. Utiliza la instrucción `commit` para crear puntos de guardado del proyecto también llamados commit.
 
 ### 3. Server
-Destino final de los archivos cuando se trabaja en equipo y/o el proyecto es público. Usa la instrucción push.
+Destino final de los archivos cuando se trabaja en equipo y/o el proyecto es público. Usa la instrucción `push`.
 
 
 
-## Usando GIT
-Crea un repositorio GIT en la ubicación actual (archivos y carpetas ocultos):
-```bash
- git init
-```
-La subcarpeta oculta *.git* **no** se comparte a los otros desarrolladores.
 
-Abre el programa de edicion elegido en el directorio actual:
-```bash
-EDITOR .
-```
-ej: abrir  VSCode en el directorio del proyecto
-```bash
- “code .”  
-```
+------
 
-Añade a GIT  los cambios realizados hasta el momento del archivo especificado únicamente.
-```bash
-git add <nombre_archivo>
-```
-Añade a GIT la carpeta indicada completa:
-```bash
-git add <nombre_directorio>
-```
-Añade a GIT las modificaciones de todos los archivos indicados:
-```bash
-git add <nombre_archivo1>  <nombre_archivo_2>  [...]
-```
-
-Añade a GIT todos los archivos terminados en la extension indicada:
-```bash
-git add  *.<extension_archivo>
-```
-Ejemplo:
-```bash
-git add *.txt
-```
-!!! warning "Añadido de todos los archivos "
-
-    Es una mala práctica porque puede añadir al proyecto archivos ajenos al programa: binarios, imágenes de entrada, archivos de salida del programa, etc.
-
-    Algunas opciones para añadir todos los archivos existentes:
-    ```bash
-    git add .
-    git add -A
-    ```
-
-
-Resumen del proyecto: rama utilizada actualmente por GIT , actualizaciones realizadas del proyecto y archivos incluidos , distinguiendo los ya guardados y los que tienen cambios pendientes de guardado.
-
-```bash
-git status
-```
-Muestra solamente los archivos del proyecto indicando cuales están alterados y guardados y cuáles no:
-```bash
-git status -s
-```
-Indica qué cambios fueron realizados en cada archivo alterado: 
-```bash
-git diff
-```
-Este comando indica qué contenido se añadió y qué contenido se quitó. Sólo muestra cambios pendientes de guardar en el proyecto. Se sale con la **tecla Q**.
-
-Indica qué cambios fueron realizados en cada archivo alterado pero esta vez ya fueron guardados en el proyecto y listos para comprometer:
-```bash
-git diff --staged
-```
-Compromete (actualiza) los cambios realizados al proyecto:
-```bash
-git commit -m “breve_descripción”
-```
-Este crea una especie de punto de guardado al cual se puede volver posteriormente con una descripción añadida por el usuario entre comillas. También asigna un número de clave identificadora para este punto de guardado. Va precedido por el comando *add*:
-```bash
-git add <archivo>
-git commit -m “breve_descripción”
-```
-Una alternativa resumida para trabajar con archivos previamente añadidos es usar directamente la opcion *-am*: 
-```bash
-git commmit -am “breve_descripción”
-```
-
-Elimina el archivo de proyecto indicado (puede revertirse)
-```bash
-git rm <nombre_archivo>
-```
-Recupera el archivo de proyecto indicado (último estado).
-```bash
-git restore <nombre_archivo>
-```
-Recupera el archivo de proyecto indicado (última versión añadida al proyecto).
-```bash
-git restore  --staged <nombre_archivo>
-```
 Mueve, renombra y añade la copia del archivo al proyecto.
 ```bash
 git mv  <nombre_archivo>  <nuevo_nombre_archivo>
 ```
-Hace que GIT deje de seguir los cambios del archivo indicado.
-```bash
-git reset HEAD <nombre_archivo>
-```
-Hace que GIT deje de seguir todos los archivos del directorio.
-```bash
-git reset HEAD
-```
-Historial de los commits realizados:
-```bash
-git log
-git log --oneline
-```
-muestra una lista en orden de los commit realizados, su número clave y su descripción realizada. Los cambios más recientes aparecen primero. Se sale con la **tecla Q**.
-
-## Variables de Entorno
-
-Las variables de entorno (usuarios, contraseñas, bases de datos etc) NO deben compartirse en GIT.
-Nombre de archivo habitual para variables entorno:  ***.env*** (archivo oculto)
-
-Puede crearse un archivo de excepciones :  .gitignore , un archivo oculto donde se indican los archivos y rutas a ignorar por GIT.
-```bash
-touch .gitignore
-```
-Es posible crear el archivo desde la terminal. El archivo se puede editar con un editor de texto donde se indica renglón a renglón cada archivo y directorio a ignorar por GIT. Formato:
-```bash
-<nombre_archivo>
-<nombre_carpeta>/
-<nombre_carpeta>/<nombre_subcarpeta>/
-```
-
-Se sube al proyecto el archivo de excepciones:
-```bash
-git add .gitignore
-```
-Si todo salió bien el comando status dejará de avisar sobre los archivos y carpetas ignorados.
 
 
-## Branch (Bifurcación)
-
-GIT permite manejar varias versiones paralelas (ramas) del proyecto mediante bifurcaciones.
-
-Indicar qué rama del proyecto nos encontramos:
-```bash
-git branch
-```
-Al comienzo es en la principal (main), la única existente por defecto. En algunas versiones de GIT la rama principal es llamada master.
-
-Crear una nueva rama con el nombre indicado 
-```bash
-git checkout -b  <nombre_nueva_rama>
-```
-*git* nos pasa a la nueva rama automaticamente.
-
-Conmuta a la rama elegida del proyecto:
-```bash
-git checkout  <nombre_rama>
-```
-Renombrar una rama:
-```bash
-git branch -m <nombre_rama>  <nuevo_nombre_rama>
-```
-Ejemplo:  de master a main   
-```bash
-git branch -m master main
-```
-
-## Merge (Unión de Ramas)
-
-Las versiones paralelas del proyecto pueden reunirse para recolectar los cambios realizados entre ellas.
-```bash
-git switch  <nombre_rama>
-git checkout  <nombre_rama_definitiva>
-```
-Es preferible el comando 'switch' porque es más respetuoso del contenido que 'checkout'
-
-Nos ubicamos en la rama que queremos actualizar y mantener.
-```bash
-git merge <rama_alterna>
-```
-Elegimos la rama de la que se leerán los cambios a añadir. Esta última NO dejará de existir sino que seguirá igual.
-
-Eliminar la rama local seleccionada: opcion *-d*
-```bash
-git branch -d <nombre_rama>
-```
- Requiere que ésta haya sido pusheada y fusionada con la rama remota.
+-----
 
 
 
@@ -325,34 +160,7 @@ git remote rename origin <nuevo_puntero>
 ```
 Cambia el nombre del puntero origin por uno distinto.
 
-## Git Stash
-git no permite el cambio de rama si los archivos tienen modificaciones no registradas.
-El comando 'stash' permite hacer guardados temporales para poder pasar a trabajar en otras ramas del proyecto sin recurrir a guardados definitivos adicionales con código defectuoso o incompleto.
 
-Guardado temporal:
-```bash
-git stash 
-```
-Cambio de rama:
-```bash
-git switch <nombre_rama>
-```
-Para recuperar los cambios provisorios (stash previos):
-```bash
-git stash pop
-```
-Listado de guardados temporales en la rama actual:
-```bash
-git stash list
-```
-Para ver los 'stash' en todo el proyecto:
-```bash
-git status --show-stash
-```
-Descarte de cambios provisorios:
-```bash
-git stash clear
-```
 
 
 ## Restaurar Archivos 

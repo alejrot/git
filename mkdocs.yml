@@ -85,11 +85,20 @@ markdown_extensions:
 
 nav:
   - Indice: index.md
-  - Configuracion inicial: configuracion_inicial.md
-  - Primeros pasos: primeros_pasos.md
-  - GIT : git.md
-  - Alias y Comandos personalizados: alias_comandos.md
-  - GitHub Pages: gh_pages.md
-  - Enlaces y referencias: enlaces.md
+  - Git:
+    - Configuracion inicial: git/configuracion_inicial.md
+    - Uso básico: git/uso_basico.md
+    - Bifurcaciones: git/bifurcaciones.md
+    
+    
+    - DESORDENADO : git.md
+    - Alias y Comandos personalizados: alias_comandos.md
+  
+    - Enlaces y referencias: enlaces.md
+  
+  
+  
+  - GitHub:
+    - GitHub Pages: gh_pages.md
 
 

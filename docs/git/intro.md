@@ -1,20 +1,13 @@
-<!-- # :simple-git:{.git} Git
-  -->
+---
+tags:
+ - git
+#  - github
+---
 
-# Git & GitHub
- 
+# Introducción
 
+## Etapas del repositorio 
 
-
-## :simple-git:{.git} git
-
-**git** es el gestor de versiones de software más popular de la actualidad. Utiliza repositorios.
-
-[Comenzar con git](./git/intro.md)
-
-
-<!-- 
-## Etapas del repositorio GIT
 
 ### 0.Untracked
 Se crea un nuevo repositorio vacío con el comando `init`.
@@ -28,32 +21,19 @@ Es una etapa intermedia dentro del computador donde el usuario decide qué archi
 Etapa donde se actualizan (guardan) los cambios hechos en los archivos del proyecto y se incorpora la numeración y una descripción de las modificaciones realizadas. Utiliza la instrucción `commit` para crear puntos de guardado del proyecto también llamados commit.
 
 ### 3. Server
-Destino final de los archivos cuando se trabaja en equipo y/o el proyecto es público. Usa la instrucción `push`. 
- -->
+Destino final de los archivos cuando se trabaja en equipo y/o el proyecto es público. Usa la instrucción `push`.
 
-<!-- 
+
+
 ## Repositorio local
 
 1. [Configuración inicial](git/configuracion_inicial.md)
 2. [Uso básico](git/uso_basico.md)
-3. [Bifurcaciones](git/bifurcaciones.md) 
--->
+3. [Bifurcaciones](git/bifurcaciones.md)
 
 
-
-
-<!-- 
 ## Repositorio remoto
 
 1.[Repositorios remotos](git/repositorio_remoto.md)
-
- -->
-
-
-##  :simple-github:{.github } GitHub 
-
-
-
-
 
 

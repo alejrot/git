@@ -13,7 +13,7 @@ git remote add origin https://github.com/MarceloMarot/git.git
 git push -u origin master
 ```
 
-
+MAL: NO HAY REPO REMOTO
 
 
 

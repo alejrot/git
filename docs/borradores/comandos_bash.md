@@ -1,8 +1,10 @@
 ---
 tags:
- - git
-#  - github
+ - Git
+#  - GitHub
+ - Bash
 ---
+
 
 ```bash
 git branch etiquetador
@@ -17,7 +19,7 @@ git push --set-upstream origin numba  # crear rama remota y sincronizar
 
 
 git remote add origin <ruta_repositorio>
-# git remote add origin https://github.com/MarceloMarot/Reflex-TutorialMouredev.git
+# git remote add origin https://GitHub.com/alejrot/Reflex-TutorialMouredev.git
 git push --set-upstream origin master # 
 
 

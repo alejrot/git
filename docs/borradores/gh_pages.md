@@ -1,8 +1,10 @@
 ---
 tags:
-#  - git
- - github
+#  - Git
+ - GitHub
+#  - Bash
 ---
+
 # GitHub Pages
 
 https://pages.github.com

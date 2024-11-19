@@ -1,13 +1,16 @@
 ---
 tags:
- - git
- - github
+ - Git
+ - GitHub
+#  - Bash
 ---
-
 
 # Taller Miududev - Git para aportar a proyectos
 
-[Video](https://www.youtube.com/watch?v=niPExbK8lSw)
+
+
+
+<iframe width="600" height="300" src="https://www.youtube.com/embed/niPExbK8lSw" title="Curso de GIT y GITHUB DESDE CERO Para Aportar a Proyectos" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 
 INFO: ***SCM: Source Code Management***

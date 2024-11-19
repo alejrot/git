@@ -1,3 +1,10 @@
+---
+tags:
+ - Git
+#  - GitHub
+ - Bash
+---
+
 
 # Uso básico
 
@@ -112,13 +119,19 @@ Recupera el archivo de proyecto indicado (último estado).
 ```bash
 git restore <nombre_archivo>
 ```
-Recupera el archivo de proyecto indicado (última versión añadida al proyecto).
+<!-- Recupera el archivo de proyecto indicado (última versión añadida al proyecto). -->
+
+Deshacer el último agregado de archivo: opción `staged`.
 ```bash
-git restore  --staged <nombre_archivo>
+git restore  --staged nombre_archivo
 ```
+
+
+## Exclusión del proyecto
+
 Hace que GIT deje de seguir los cambios del archivo indicado.
 ```bash
-git reset HEAD <nombre_archivo>
+git reset HEAD nombre_archivo
 ```
 Hace que GIT deje de seguir todos los archivos del directorio.
 ```bash
@@ -134,10 +147,10 @@ Historial de los commits realizados:
 git log
 git log --oneline
 ```
-muestra una lista en orden de los commit realizados, su número clave y su descripción realizada. Los cambios más recientes aparecen primero. Se sale con la **tecla Q**.
+muestra una lista en orden de los commit realizados, su número clave y su descripción realizada. Los cambios más recientes aparecen primero. Se sale con la tecla ++q++.
 
 
-
+<!-- 
 ## Archivo de excepciones - `.gitignore`
 
 
@@ -185,4 +198,4 @@ Si se requiere forzar el agregado de un archivo excluido se usa la opción `--fo
 
     ```
     .env
-    ```
+    ``` -->

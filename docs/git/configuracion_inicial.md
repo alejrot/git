@@ -1,4 +1,9 @@
-
+---
+tags:
+ - Git
+#  - GitHub
+#  - Bash
+---
 
 
 # Comandos Iniciales y Configuración Global
@@ -71,5 +76,5 @@ git config -h
 ```
 
 !!! hint "HINT" 
-    Se puede volver de las ventanas informativas a la ventana de comandos presionando la **letra Q**.
+    Se puede volver de las ventanas informativas a la ventana de comandos presionando la **letra ++q++**.
 

@@ -1,3 +1,10 @@
+---
+tags:
+ - Git
+#  - GitHub
+#  - Bash
+---
+
 # Commits previos
 
 

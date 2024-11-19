@@ -1,9 +1,9 @@
 ---
 tags:
- - git
-#  - github
+ - Git
+#  - GitHub
+#  - Bash
 ---
-
 
 # Forks en GitHub
 

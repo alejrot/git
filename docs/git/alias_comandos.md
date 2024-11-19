@@ -1,15 +1,15 @@
 ---
 tags:
- - git
- - github
+ - Git
+ - GitHub
+#  - Bash
 ---
-
 
 ## Alias de comandos Git
 
 Se pueden **crear alias** para los comandos más usados
 ```bash
-git cofig --global alias.<apodo> <comandos>
+git cofig --global alias.apodo   comandos
 ```
 
 A continuación se proponen algunos ejemplos de alias útiles.

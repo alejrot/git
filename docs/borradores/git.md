@@ -1,13 +1,9 @@
----
-tags:
- - git
-#  - github
----
-
 
 
 
 # GIT
+<!-- 
+
 
 ## Comandos de los directorios (Bash)
 Archivos del actual directorio (sólo visibles)
@@ -58,7 +54,10 @@ Crea un archivo vacío con el nombre indicado:
 ```bash
 touch <nombre_archivo>
 ```
+-->
 
+
+<!-- 
 ## Etapas del repositorio GIT
 
 ### 0.Untracked
@@ -74,7 +73,7 @@ Etapa donde se actualizan (guardan) los cambios hechos en los archivos del proye
 
 ### 3. Server
 Destino final de los archivos cuando se trabaja en equipo y/o el proyecto es público. Usa la instrucción `push`.
-
+ -->
 
 
 

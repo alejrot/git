@@ -1,3 +1,10 @@
+---
+tags:
+ - Git
+#  - GitHub
+#  - Bash
+---
+
 # Bifurcaciones
 
 Git permite gestionar múltiples ramas o bifurcaciones (*branches*) en un mismo proyecto, lo cual permite amntener versiones alternativas de un mismo proyecto, implementar correcciones y mejoras en paralelo a la rama en producción, etc.

@@ -47,14 +47,14 @@ rm  nombre_archivo
 ```
 Mueve (y renombra) el archivo indicado
 ```bash
-mv  <nombre_archivo>  <nuevo_nombre_archivo>
+mv  nombre_archivo  nuevo_nombre_archivo
 ```
 Lee y muestra en pantalla el contenido de archivo indicado.
 ```bash
-cat <nombre_archivo>
+cat nombre_archivo
 ```
 
 Crea un archivo vacío con el nombre indicado:
 ```bash
-touch <nombre_archivo>
+touch nombre_archivo
 ```

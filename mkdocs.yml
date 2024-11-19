@@ -1,6 +1,17 @@
 site_name: Git
 
 
+site_description: Resumen sobre Git
+site_url: https://alejrot.github.io/git/
+
+
+repo_url: https://github.com/alejrot/git
+repo_name: git
+edit_uri: edit/master/docs/
+
+copyright: Copyright &copy; 2024 Marcelo Marot Rosas
+
+
 theme:
   name: material
   language: es
@@ -138,11 +149,9 @@ nav:
     - Uso básico: git/uso_basico.md
     - Archivo de excepciones: git/gitignore.md
     - Bifurcaciones: git/bifurcaciones.md
-    
     - Commits previos:  git/commits_previos.md
-
-
     - Repositorios remotos: git/repositorio_remoto.md
+
 
   - Extras:
     - Taller Midudev: extra/taller_midu.md

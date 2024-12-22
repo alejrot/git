@@ -19,7 +19,7 @@ La subcarpeta oculta `.git` es manejada exclusivamente por Git y **no se sube** 
 
 
 
-!!! tip "TIP: abrir directorio del proyecto"
+!!! tip "TIP: abrir directorio como workspace"
 
 
     Se puede abrir el programa de edición elegido en el directorio actual 
@@ -29,10 +29,13 @@ La subcarpeta oculta `.git` es manejada exclusivamente por Git y **no se sube** 
     nombre_editor .
     ```
     Por ejemplo, para abrir VSCodium desde terminal
-    con el directorio del proyecto actual:
+    con el directorio del proyecto actual precargado como *workspace*:
+
     ```bash
+    cd ruta_proyecto
     “codium .”  
     ``` 
+
 
 
 ## Agregado - `add`

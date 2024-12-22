@@ -15,7 +15,7 @@ tags:
 
 Indicamos la dirección web del servidor y nuestro directorio que aloja el repositorio remoto del proyecto (se presupone que éste ya existe):
 ```bash
-git remote add origin <URL/directorio/nombre_proyecto>
+git remote add origin URL/directorio/nombre_proyecto
 ```
 
 Ejemplo típico : repositorio en GitHub
@@ -23,7 +23,10 @@ Ejemplo típico : repositorio en GitHub
     https://github.com/MI_USUARIO/MI_PROYECTO
 
 
+## Crear rama
+
 Crea en el repositorio remoto la rama indicada y sube los cambios guardados realizados (*commits*) en el proyecto al servidor:
+
 ```bash
 git push -u origin nombre_rama
 ```
@@ -73,7 +76,7 @@ git fetch
 
 Eliminar la rama remota elegida:
 ```bash
-git push remote  --delete <nombre_rama>
+git push origin -d  nombre_rama
 ```
 Elimina las ramas locales que ya no estén en el repositorio remoto:
 ```bash

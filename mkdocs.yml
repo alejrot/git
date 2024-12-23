@@ -154,8 +154,9 @@ nav:
     - Introducción: git/intro.md
     # - Comandos de Bash: git/comandos.md
     - Configuracion inicial: git/configuracion_inicial.md
-    - Uso básico: git/uso_basico.md
+    - Agregado y guardado: git/uso_basico.md
     - Archivo de excepciones: git/gitignore.md
+    - Cambios y registro: git/cambios_registro.md
     - Bifurcaciones: git/bifurcaciones.md
     - Commits previos:  git/commits_previos.md
     - Repositorios remotos: git/repositorio_remoto.md

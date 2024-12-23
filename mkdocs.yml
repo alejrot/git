@@ -152,6 +152,7 @@ nav:
   - Indice: index.md
   - Git:
     - Introducción: git/intro.md
+    # - Comandos de Bash: git/comandos.md
     - Configuracion inicial: git/configuracion_inicial.md
     - Uso básico: git/uso_basico.md
     - Archivo de excepciones: git/gitignore.md
@@ -161,9 +162,9 @@ nav:
 
 
   - Extras:
+    - Comandos Bash: extra/comandos.md
     - Taller Midudev: extra/taller_midu.md
     - Alias y Comandos personalizados: git/alias_comandos.md
-    - Comandos Bash: extra/comandos.md
 
   - Borradores:
     - borradores/comandos_bash.md

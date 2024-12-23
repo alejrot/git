@@ -19,19 +19,19 @@ git --version
 
 # Configuración global
 
+Git requiere una serie de configuraciones preliminares en la estación de trabajo para funcionar correctamente.
 
-## Nombre de usuario
 
-Ponemos nuestro nombre a nuestra estación de trabajo:
-```bash
+## Usuario
+
+Ponemos nuestro nombre o apodo a nuestra estación de trabajo:
+```bash title="user"
 git config --global user.name nombre_usuario
 ```
 
-## Email
+También declaramos nuestro email: 
 
-Declaramos nuestro email: 
-
-```bash
+```bash title="email"
 git config --global user.email   nombre_usuario@servidor_correo
 ```
 

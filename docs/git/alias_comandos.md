@@ -9,7 +9,7 @@ tags:
 
 Se pueden **crear alias** para los comandos más usados
 ```bash
-git cofig --global alias.apodo   comandos
+git config --global alias.apodo   comandos
 ```
 
 A continuación se proponen algunos ejemplos de alias útiles.

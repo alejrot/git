@@ -158,6 +158,7 @@ nav:
     - Archivo de excepciones: git/gitignore.md
     - Cambios y registro: git/cambios_registro.md
     - Bifurcaciones: git/bifurcaciones.md
+    - Guardado provisorio: git/stash.md
     - Commits previos:  git/commits_previos.md
     - Repositorios remotos: git/repositorio_remoto.md
 
@@ -165,7 +166,10 @@ nav:
   - Extras:
     - Comandos Bash: extra/comandos.md
     - Taller Midudev: extra/taller_midu.md
+    - Comando checkout: extra/checkout.md
+    
     - Alias y Comandos personalizados: git/alias_comandos.md
+
 
   - Borradores:
     - borradores/comandos_bash.md

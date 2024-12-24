@@ -33,7 +33,7 @@ git diff nombre_archivo
 
 
 
-## Información - `log`
+## Registro de guardados - `log`
 
 El comando `log` proporciona un historial de los *commits* realizados:
 

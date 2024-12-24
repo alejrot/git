@@ -12,7 +12,7 @@ tags:
 ## Inicialización - `init`
 
 Este comando crea un repositorio Git en la ubicación actual:
-```bash
+```bash title="Crear repositorio"
  git init
 ```
 creando automáticamente la subcarpeta oculta `.git` con toda la información del repositorio, sus cambios, etc. 

@@ -39,3 +39,14 @@ git checkout  nombre_rama
 ```
 
 Es preferible el comando 'switch' porque es más respetuoso del contenido que 'checkout' 
+
+
+
+## Restaurar Archivos 
+
+Para deshacer los cambios hechos sobre un archivo preguardado con el comando `add`:
+```bash
+git checkout -- nombre_archivo  #deshace cambios no 'added'
+```
+
+

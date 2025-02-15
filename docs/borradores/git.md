@@ -76,16 +76,14 @@ Destino final de los archivos cuando se trabaja en equipo y/o el proyecto es pú
  -->
 
 
-
+<!-- 
 ------
-
 Mueve, renombra y añade la copia del archivo al proyecto.
 ```bash
 git mv  <nombre_archivo>  <nuevo_nombre_archivo>
 ```
-
-
 -----
+ -->
 
 
 ## Generar token
@@ -101,14 +99,16 @@ El servidor nos pedirá un usuario y contraseña.En github esta última se obtie
 
 
 
-
 ## Restaurar Archivos 
+<!-- 
 
 Para deshacer los cambios hechos sobre un archivo preguardado con el comando 'add':
 ```bash
 git checkout -- <archivo>   #deshace cambios no 'added'
 ```
-o:
+o: 
+-->
+
 
 ```bash
 git restore <archivo>  # descarta cambios respecto del último estado guardado ('add' o 'commit') 
@@ -136,8 +136,7 @@ git revert <id>
 
 
 
-
-
+<!-- 
 ## Diferencias - diff
 
 Marcar cambios respecto al último guardado:
@@ -147,7 +146,8 @@ git diff
 Comparar la rama actual con una alterna:
 ```bash
 git diff <nombre_rama>
-```
+``` 
+-->
 
 ## Git Flow
 
